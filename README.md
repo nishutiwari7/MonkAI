@@ -1,18 +1,18 @@
-### MonkAI - Object Detection Microservice
+# MonkAI - Object Detection Microservice
 This project demonstrates a microservice architecture for object detection using YOLOv3. The system processes images uploaded by users, performs object detection using a pre-trained YOLOv3 model, and returns annotated images along with structured JSON outputs. The application uses a UI backend and an AI backend to provide a seamless user experience.
 
 ## Features
-# Image Upload: Users can upload images through a web interface.
-# YOLOv3 Object Detection: Lightweight object detection with YOLOv3 for detecting multiple objects in the images.
-# Annotated Images: Detected objects are highlighted in the images with bounding boxes.
-# JSON Output: The system returns a JSON file with structured information about the detected objects.
-# Microservice Architecture: The system is split into UI and AI services that communicate seamlessly.
-# Dockerized Deployment: The application is containerized using Docker for easy deployment and scaling.
+### Image Upload: Users can upload images through a web interface.
+### YOLOv3 Object Detection: Lightweight object detection with YOLOv3 for detecting multiple objects in the images.
+### Annotated Images: Detected objects are highlighted in the images with bounding boxes.
+### JSON Output: The system returns a JSON file with structured information about the detected objects.
+### Microservice Architecture: The system is split into UI and AI services that communicate seamlessly.
+### Dockerized Deployment: The application is containerized using Docker for easy deployment and scaling.
 
 ## Project Structure
 graphql
 
-#MonkAI/
+MonkAI/
 ├── AIService/
 │   ├── app.py                  # Main API for AI backend (object detection)
 │   ├── requirements.txt        # Python dependencies for AI service
@@ -33,11 +33,11 @@ graphql
 ├── docker-compose.yaml         # Configuration to orchestrate services using Docker
 └── README.md                   # This file
 ## Getting Started
-# Prerequisites
+### Prerequisites
 Docker: For containerized deployment of services.
 Python: Required for local development and testing (for AI and UI services).
 
-# Installation
+### Installation
 Clone the repository:
 
 Copy code
@@ -96,21 +96,21 @@ docker-compose down
 
 ## How It Works
 
-# UI Service: The web interface allows users to upload images. Upon submission, the UI sends the image to the AI service.
-# AI Service: The AI service processes the image using a pre-trained YOLOv3 model. The detected objects are then highlighted with bounding boxes, and the results are returned as an annotated image and a structured JSON file with object labels, coordinates, and confidence scores.
-# JSON Output: Each object detected in the image is returned with details such as:
+### UI Service: The web interface allows users to upload images. Upon submission, the UI sends the image to the AI service.
+### AI Service: The AI service processes the image using a pre-trained YOLOv3 model. The detected objects are then highlighted with bounding boxes, and the results are returned as an annotated image and a structured JSON file with object labels, coordinates, and confidence scores.
+### JSON Output: Each object detected in the image is returned with details such as:
 Object class (e.g., person, car, etc.)
 Confidence score
 Coordinates of the bounding box
 Testing
 Run Unit Tests
-# To test the AI service:
+## To test the AI service:
 
 Copy code
 cd AIService
 python -m unittest discover -s tests
 
-#To test the UI service:
+## To test the UI service:
 
 Copy code
 cd UIService
@@ -136,7 +136,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 For queries or suggestions, reach out to Nishu Tiwari at u.nishu703@gmail.com.
 
-# Feel free to customize this further based on any additional configurations or features in your project!
+### Feel free to customize this further based on any additional configurations or features in your project!
 
 
 
