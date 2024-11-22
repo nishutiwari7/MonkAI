@@ -134,7 +134,7 @@ Push to your branch and open a pull request.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For queries or suggestions, reach out to Nishu Tiwari at your-email@example.com.
+For queries or suggestions, reach out to Nishu Tiwari at u.nishu703@gmail.com.
 
 # Feel free to customize this further based on any additional configurations or features in your project!
 
