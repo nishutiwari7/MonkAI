@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ai_service:
+    build:
+      context: ./AIService
+    ports:
+      - "5001:5000"
+
+  ui_service:
+    build:
+      context: ./UIService
+    ports:
+      - "5000:5000"
+    depends_on:
+      - AIService
